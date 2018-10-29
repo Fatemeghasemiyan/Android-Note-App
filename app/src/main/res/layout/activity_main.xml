@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <android.support.design.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/colorAccent"
+
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:layout_anchor="@id/bottomAppBar_main"
+       android:src="@drawable/ic_add_white_60dp"
+        />
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_main_itemNote"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <LinearLayout
+    android:id="@+id/ll_main_emptyState"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+        android:visibility="gone">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_note_add_grey_24dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:text="Write Your First Note"/>
+    <Button
+        android:id="@+id/btn_main_addNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_background_shape"
+        android:textColor="@color/white"
+        android:text="Add new note"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="8dp"
+        />
+
+</LinearLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
